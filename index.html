@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaperArt | Catálogo Privado</title>
+
+<meta name="robots" content="noindex, nofollow">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --rosa:#f7eded;
+  --rosa2:#f1dede;
+  --rose:#c79a7a;
+  --dourado:#d6b48a;
+  --texto:#6a4b4b;
+  --branco:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:linear-gradient(180deg,var(--rosa),var(--branco));
+  color:var(--texto);
+}
+
+header{
+  text-align:center;
+  padding:48px 16px;
+  background:radial-gradient(circle at top,#fff,var(--rosa2));
+}
+
+header img{
+  width:200px;
+  max-width:70%;
+  margin-bottom:18px;
+}
+
+header h1{
+  font-family:'Playfair Display', serif;
+  color:var(--rose);
+  font-size:2rem;
+  margin-bottom:8px;
+}
+
+header p{
+  font-size:.95rem;
+  opacity:.85;
+}
+
+main{
+  padding:32px 16px 100px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.aviso{
+  background:linear-gradient(180deg,var(--rosa2),#fff);
+  border:1px solid var(--rosa2);
+  border-radius:20px;
+  padding:20px;
+  margin-bottom:50px;
+  text-align:center;
+  font-size:.9rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.aviso strong{
+  color:var(--rose);
+}
+
+.categoria{
+  margin-bottom:60px;
+}
+
+.categoria h2{
+  font-family:'Playfair Display', serif;
+  color:var(--rose);
+  font-size:1.55rem;
+  margin-bottom:22px;
+  border-bottom:1px solid var(--rosa2);
+  display:inline-block;
+  padding-bottom:6px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--branco);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+  transition:transform .3s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+}
+
+.info{
+  padding:16px;
+  text-align:center;
+}
+
+.info h3{
+  font-size:.9rem;
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+.info span{
+  font-size:.8rem;
+  color:var(--dourado);
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:22px;
+  right:22px;
+  width:56px;
+  height:56px;
+  background:#25d366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  z-index:999;
+  transition:transform .3s ease;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.08);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  font-size:.75rem;
+  opacity:.7;
+  padding:32px 16px;
+}
+
+footer strong{color:var(--rose);}
+
+.instagram-box{
+  margin-bottom:16px;
+}
+
+.instagram-box a{
+  display:inline-block;
+  padding:10px 24px;
+  border-radius:30px;
+  background:var(--rose);
+  color:#fff;
+  text-decoration:none;
+  font-size:.85rem;
+  box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo-paperart.png" alt="PaperArt">
+  <h1>Conheça nosso catálogo</h1>
+  <p>Luxo, delicadeza e exclusividade em papelaria personalizada</p>
+</header>
+
+<main>
+
+<div class="aviso">
+  <p>
+    💌 <strong>Todos os produtos são feitos sob encomenda.</strong><br>
+    Para valores, prazos e personalização, fale conosco pelo WhatsApp.
+  </p>
+</div>
+
+<section class="categoria">
+<h2>Caixinhas Personalizadas</h2>
+<div class="grid">
+
+
+
+<div class="card"><img src="imagens/caixa-piramide.png"><div class="info"><h3>Caixa Pirâmide</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="caixa-milk.jpg"><div class="info"><h3>Caixa Milk</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="./sacolinha.png" alt=""/><div class="info"><h3>Sacolinha</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="caixa-coracao.jpg"><div class="info"><h3>Caixa Coração</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="caixa-redonda.jpg"><div class="info"><h3>Caixa Redonda</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="caixa-bala.jpg"><div class="info"><h3>Caixa Bala</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="caixa-meia-bala.jpg"><div class="info"><h3>Caixa Meia Bala</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+<section class="categoria">
+<h2>Topo de Bolo</h2>
+<div class="grid">
+<div class="card"><img src="topo-simples.jpg"><div class="info"><h3>Topo de Bolo Clássico</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="topo-arranjo.jpg"><div class="info"><h3>Topo de Bolo em Arranjo</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="topo-luxo.jpg"><div class="info"><h3>Topo de Bolo Luxo (lamicote)</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+<section class="categoria">
+<h2>Decoração</h2>
+<div class="grid">
+<div class="card"><img src="display.jpg"><div class="info"><h3>Display de Mesa</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="bandeirola-mesa.jpg"><div class="info"><h3>Bandeirola de Mesa</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="bandeirola-parede.jpg"><div class="info"><h3>Bandeirola de Parede</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="polaroid.jpg"><div class="info"><h3>Fotos Polaroid</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="ima.jpg"><div class="info"><h3>Decoração com Ímã</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+<section class="categoria">
+<h2>Tags & Rótulos</h2>
+<div class="grid">
+<div class="card"><img src="tag.jpg"><div class="info"><h3>Tags Personalizadas</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="tag-doce.jpg"><div class="info"><h3>Tags para Doces</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="adesivos.jpg"><div class="info"><h3>Adesivos Personalizados</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="rotulo.jpg"><div class="info"><h3>Rótulos de Salgadinho Personalizado</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="rotulo-bala.jpg"><div class="info"><h3>Rótulos de Bala Personalizado</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="rotulo-pirulito.jpg"><div class="info"><h3>Rótulos de Pirulito Personalizado</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="forminha.jpg"><div class="info"><h3>Forminhas</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="cachepo.jpg"><div class="info"><h3>Cachepô</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+<section class="categoria">
+<h2>Cestas & Arranjos Especiais</h2>
+<div class="grid">
+<div class="card"><img src="cesta.jpg"><div class="info"><h3>Cesta Cenário</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="envelope.jpg"><div class="info"><h3>Envelope Presente</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="buque.jpg"><div class="info"><h3>Buquê Coração</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+<section class="categoria">
+<h2>Serviços</h2>
+<div class="grid">
+<div class="card"><img src="pb.jpg"><div class="info"><h3>Impressão P&B</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="colorida.jpg"><div class="info"><h3>Impressão Colorida</h3><span>Sob consulta</span></div></div>
+<div class="card"><img src="xerox.jpg"><div class="info"><h3>Xerox / Frente e Verso</h3><span>Sob consulta</span></div></div>
+</div>
+</section>
+
+</main>
+
+<a href="https://wa.me/5575982327865" class="whatsapp-float" target="_blank">💬</a>
+
+<footer>
+<div class="instagram-box">
+<a href="https://www.instagram.com/raffa__almeida" target="_blank">📷 Instagram</a>
+</div>
+© <strong>PaperArt</strong> • Catálogo exclusivo • Acesso somente por link
+</footer>
+
+</body>
+</html>
