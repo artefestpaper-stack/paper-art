@@ -1,0 +1,164 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f7f4f2;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* CONTAINER GERAL */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* TÍTULOS */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: #4a3b35;
+}
+
+h2 {
+  margin: 40px 0 16px;
+  font-size: 1.6rem;
+  color: #6b4f45;
+  border-bottom: 2px solid #e3d7d1;
+  padding-bottom: 8px;
+}
+
+/* GRID DE PRODUTOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* IMAGEM */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background-color: #f0f0f0;
+}
+
+/* INFO DO CARD */
+.info {
+  padding: 16px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #4a3b35;
+  text-transform: capitalize;
+}
+
+.info span {
+  font-size: 0.9rem;
+  color: #8c6f64;
+}
+
+/* AVISO SOB CONSULTA */
+.info span::before {
+  content: "• ";
+}
+
+/* SEÇÕES */
+.section {
+  margin-bottom: 56px;
+}
+
+/* BOTÃO WHATSAPP FIXO */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: 60px;
+  padding: 32px 16px;
+  background: #ede6e2;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #6b4f45;
+}
+
+/* BOTÃO INSTAGRAM */
+.instagram-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  background: #d63384;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.instagram-btn:hover {
+  background: #b92d6f;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
